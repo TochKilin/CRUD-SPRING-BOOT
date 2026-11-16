@@ -7,7 +7,7 @@ import java.time.LocalDateTime;
 
 public class CategorySpecification {
 
-    // ត្រងតាម Name (ស្វែងរកបែប Contains និងមិនគិតតួអក្សរតូចធំ)
+    // ត្រងតាម Name
     public static Specification<Category> hasName(String name) {
         return (root, query, criteriaBuilder) -> {
             if (name == null || name.trim().isEmpty()) {

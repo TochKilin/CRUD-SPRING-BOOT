@@ -10,7 +10,7 @@ import java.util.List;
 @Repository
 public interface CategoryRepository extends JpaRepository<Category,Long>, JpaSpecificationExecutor<Category> {
 
-    // Fixed: changed 'existByCode' to 'existsByCode'
+    // Fixed changed 'existByCode' to 'existsByCode'
     boolean existsByCode(String code);
     List<Category> findByNameContainingIgnoreCase(String name);
 
